@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var x = "tualsi";
+     var en = parseInt(prompt());
+     var te = parseInt(prompt());
+     var sc = parseInt(prompt());
+     var mat = parseInt(prompt());
+     var so = parseInt(prompt());
+     var sum = add(en,te,sc,mat,so);
+     var avg = sum/5;
+     var avg1 = grade(avg);
+     console.log(x);
+     console.log(avg1);
+
+     function add(e,t,sc,m,so){
+         var st = e+t+sc+m+so;
+         return st;
+     }
+     function grade(avg){
+         switch(true){
+             case avg < 100: return("Grade A");break;
+             case avg >  90: return("Grade B");break;
+             case avg > 80: return("Grade C");break;
+             case avg > 70: return("Grade D");break;
+             default:return("FAil");
+
+         }
+     }
+
+     
+
+     
+
+
+
+    </script>
+   
+    
+</body>
+</html>
